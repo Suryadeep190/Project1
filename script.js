@@ -18,15 +18,3 @@ const yearEl = document.getElementById('year');
 if (yearEl) {
   yearEl.textContent = String(new Date().getFullYear());
 }
-
-const menuLastUpdatedEl = document.getElementById('menu-last-updated');
-if (menuLastUpdatedEl) {
-  const now = new Date();
-  const formatted = now.toLocaleDateString('en-GB', {
-    day: '2-digit',
-    month: 'long',
-    year: 'numeric',
-  });
-  menuLastUpdatedEl.textContent = formatted;
-  menuLastUpdatedEl.setAttribute('datetime', now.toISOString().slice(0, 10));
-}
