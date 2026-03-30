@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <title>Khaugali Chula Dosa | Ahmedabad</title>
     <meta
       name="description"
@@ -63,8 +63,11 @@
     </script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" as="image"
+      href="https://images.unsplash.com/photo-1668236543090-82eba5ee5976?w=900&q=80"
+      fetchpriority="high">
     <link
-      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+Gujarati:wght@400;600;700&family=Urbanist:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&text=ABCDEFGHIJKLMNOPQRSTUVWXYZ%20abcdefghijklmnopqrstuvwxyz0123456789.%2C%27%21%3F&family=Noto+Sans+Gujarati:wght@400;600;700&family=Urbanist:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
     <meta name="color-scheme" content="light" />
@@ -73,6 +76,7 @@
   <body>
     <a href="#main-content" class="skip-link">Skip to main content</a>
     <div class="grain" aria-hidden="true"></div>
+    <div class="bg-blobs" aria-hidden="true"></div>
 
     <header class="site-header" id="top">
       <a class="brand" href="#top">
@@ -111,6 +115,7 @@
             </div>
           </div>
           <div class="mini-info">
+            <span class="open-status" id="open-status"></span>
             <span>⭐ 3.5 (41+ reviews)</span>
             <span>₹200 avg. per person</span>
             <span>Open Daily: 7:30 PM - 11:00 PM</span>
@@ -119,7 +124,13 @@
 
         <div class="hero-card">
           <div class="hero-card-image">
-            <img src="https://images.unsplash.com/photo-1668236543090-82eba5ee5976?w=1200" alt="Crispy golden dosa on a traditional plate" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1668236543090-82eba5ee5976?w=900&q=80"
+                 alt="Crispy golden dosa on a traditional plate"
+                 loading="eager"
+                 decoding="async"
+                 fetchpriority="high"
+                 width="900"
+                 height="506">
           </div>
           <p class="card-title">Tonight's Crowd Picks</p>
           <ul>
@@ -296,6 +307,11 @@
               <cite>- Family Group</cite>
             </blockquote>
           </article>
+        </div>
+        <div class="scroll-dots" aria-hidden="true" id="testimonial-dots">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
         </div>
       </section>
 
