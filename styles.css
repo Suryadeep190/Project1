@@ -576,65 +576,41 @@ main {
 
 @media (max-width: 680px) {
   body {
-    padding-bottom: 5rem;
+    padding-bottom: 1.2rem;
   }
 
   .site-header {
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    overflow-x: auto;
   }
 
   .nav {
-    order: 3;
-    width: 100%;
-    justify-content: center;
+    order: 0;
+    width: auto;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    white-space: nowrap;
+    max-width: 56vw;
+  }
+
+  .special-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .mobile-sticky-cta {
+    display: none;
+  }
+}
+
+@media (max-width: 520px) {
+  .nav {
+    max-width: 48vw;
   }
 
   .special-grid {
     grid-template-columns: 1fr;
-  }
-
-  .btn {
-    width: 100%;
-  }
-
-  .hero-cta .btn-ghost,
-  .hero-cta .btn-whatsapp {
-    width: 100%;
-  }
-
-  .mobile-sticky-cta {
-    position: fixed;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 120;
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 0.35rem;
-    padding: 0.52rem;
-    background: rgba(255, 255, 255, 0.92);
-    border-top: 1px solid rgba(26, 36, 64, 0.15);
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
-  }
-
-  .mobile-sticky-cta a {
-    text-align: center;
-    text-decoration: none;
-    font-weight: 800;
-    border-radius: 999px;
-    padding: 0.7rem 0.35rem;
-    color: #fff;
-    background: linear-gradient(135deg, #ff5e3a, #ff8b2b 64%, #ffbf00);
-  }
-
-  .mobile-sticky-cta a:nth-child(2) {
-    background: linear-gradient(135deg, #1bcf74, #0f9f53);
-  }
-
-  .mobile-sticky-cta a:nth-child(3) {
-    background: linear-gradient(135deg, #0086a0, #00b3c7);
   }
 }
 
