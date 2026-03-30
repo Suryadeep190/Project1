@@ -25,6 +25,7 @@ html,
 body {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 body {
@@ -103,6 +104,8 @@ body {
   backdrop-filter: blur(12px);
   border-bottom: 1px solid rgba(26, 36, 64, 0.1);
   box-shadow: 0 3px 18px rgba(33, 48, 94, 0.1);
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .brand {
@@ -231,6 +234,8 @@ button,
   padding-bottom: calc(0.6rem + env(safe-area-inset-bottom));
   gap: 0.5rem;
   box-shadow: 0 -8px 24px rgba(26, 36, 64, 0.1);
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .sticky-btn {
@@ -282,10 +287,13 @@ button,
    MAIN & HERO (Mobile-first)
    ============================================ */
 main {
-  width: min(1140px, 92vw);
+  width: 100%;
+  max-width: 1140px;
   margin: 1.2rem auto 3rem;
   display: grid;
   gap: 2rem;
+  padding: 0 4vw;
+  box-sizing: border-box;
 }
 
 .hero {
@@ -300,6 +308,8 @@ main {
     linear-gradient(220deg, rgba(0, 179, 199, 0.12), rgba(255, 94, 58, 0.12));
   border: 1px solid rgba(26, 36, 64, 0.1);
   box-shadow: var(--shadow);
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .eyebrow {
@@ -495,9 +505,8 @@ main {
   padding: 0.72rem 0;
   background: linear-gradient(95deg, #ffedc2, #fff8ea 52%, #d8f5ff);
   border: 1px solid rgba(26, 36, 64, 0.12);
-  mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
-  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
   box-shadow: 0 4px 16px rgba(26, 36, 64, 0.08);
+  max-width: 100%;
 }
 
 .ticker-track {
@@ -969,11 +978,14 @@ main {
 }
 
 .footer-grid {
-  width: min(1140px, 92vw);
+  width: 100%;
+  max-width: 1140px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr;
   gap: 1.5rem;
+  padding: 0 4vw;
+  box-sizing: border-box;
 }
 
 .footer-col h4 {
@@ -1052,9 +1064,10 @@ main {
 }
 
 .footer-bottom {
-  width: min(1140px, 92vw);
+  width: 100%;
+  max-width: 1140px;
   margin: 1.5rem auto 0;
-  padding-top: 1.2rem;
+  padding: 1.2rem 4vw 0;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   text-align: center;
   color: #a08060;
@@ -1062,6 +1075,7 @@ main {
   flex-direction: column;
   gap: 0.4rem;
   font-size: 0.88rem;
+  box-sizing: border-box;
 }
 
 .footer-bottom a {
@@ -1115,6 +1129,12 @@ main {
    DESKTOP ENHANCEMENTS (768px+)
    ============================================ */
 @media (min-width: 768px) {
+  main {
+    margin: 1.8rem auto 4rem;
+    gap: 3.2rem;
+    padding: 0 4vw;
+  }
+
   .site-header {
     padding: 0.95rem 4vw;
   }
@@ -1277,6 +1297,7 @@ main {
   .footer-grid {
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
+    padding: 0 4vw;
   }
 
   .footer-bottom {
@@ -1284,7 +1305,7 @@ main {
     justify-content: center;
     gap: 1rem;
     margin: 2rem auto 0;
-    padding-top: 1.5rem;
+    padding: 1.5rem 4vw 0;
   }
 }
 
@@ -1305,6 +1326,14 @@ main {
   }
 
   .scroll-dots { display: none !important; }
+
+  .footer-grid {
+    padding: 0 4vw;
+  }
+
+  .footer-bottom {
+    padding: 1.5rem 4vw 0;
+  }
 
   .about {
     grid-template-columns: 1.05fr 0.95fr;
