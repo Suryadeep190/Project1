@@ -775,7 +775,8 @@ button:focus-visible {
   }
 
   .brand strong {
-    font-size: 18px;
+    font-size: 16px;
+    letter-spacing: 0.08em;
   }
 
   .brand small {
@@ -792,19 +793,37 @@ button:focus-visible {
   }
 
   .hero {
-    padding: 98px 14px 38px;
+    padding: 98px 14px 120px;
     min-height: 88vh;
   }
 
+  .hero-content {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .hero-label {
+    font-size: 9px;
+    letter-spacing: 0.14em;
+    line-height: 1.35;
+    padding: 0 4px;
+    overflow-wrap: anywhere;
+  }
+
   .hero h1 {
-    font-size: clamp(50px, 18vw, 84px);
-    letter-spacing: 0.03em;
+    font-size: clamp(42px, 14vw, 64px);
+    letter-spacing: 0.015em;
+    line-height: 0.92;
+    max-width: 100%;
+    overflow-wrap: anywhere;
   }
 
   .hero p {
-    font-size: 15px;
+    font-size: 14px;
     margin-top: 16px;
     line-height: 1.5;
+    max-width: 100%;
+    padding: 0 4px;
   }
 
   .hero-pills {
@@ -914,7 +933,7 @@ button:focus-visible {
   .mobile-fab {
     position: fixed;
     right: 14px;
-    bottom: calc(14px + env(safe-area-inset-bottom));
+    bottom: calc(12px + env(safe-area-inset-bottom));
     display: grid;
     gap: 8px;
     z-index: 1100;
