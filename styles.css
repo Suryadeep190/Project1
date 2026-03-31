@@ -23,6 +23,7 @@ body {
   padding: 0;
   scroll-behavior: smooth;
   overflow-x: hidden;
+  max-width: 100%;
 }
 
 body {
@@ -36,6 +37,11 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+img,
+svg {
+  max-width: 100%;
 }
 
 .skip-link {
@@ -368,6 +374,7 @@ main {
 .visit,
 .site-footer {
   width: min(1220px, 92vw);
+  max-width: 100%;
   margin: 0 auto;
 }
 
@@ -512,6 +519,7 @@ main {
   display: flex;
   align-items: baseline;
   gap: 10px;
+  min-width: 0;
 }
 
 .menu-item-head h3 {
@@ -519,6 +527,7 @@ main {
   font-size: 22px;
   font-family: "Bebas Neue", sans-serif;
   letter-spacing: 0.06em;
+  min-width: 0;
 }
 
 .menu-item-head span {
@@ -526,6 +535,7 @@ main {
   color: var(--gold);
   font-weight: 800;
   letter-spacing: 0.08em;
+  white-space: nowrap;
 }
 
 .menu-item p {
@@ -788,6 +798,7 @@ button:focus-visible {
 
   .hero h1 {
     font-size: clamp(50px, 18vw, 84px);
+    letter-spacing: 0.03em;
   }
 
   .hero p {
@@ -817,7 +828,24 @@ button:focus-visible {
   .reviews,
   .visit,
   .site-footer {
-    width: calc(100vw - 20px);
+    width: min(100%, calc(100vw - 20px));
+  }
+
+  .footer-brand {
+    font-size: 26px;
+    letter-spacing: 0.05em;
+    line-height: 1;
+    word-break: break-word;
+  }
+
+  .menu-grid,
+  .menu-item,
+  .menu-item-head,
+  .menu-item-head h3,
+  .menu-item p,
+  .review-grid article,
+  .visit-grid article {
+    max-width: 100%;
   }
 
   .signature-card img {
@@ -852,6 +880,7 @@ button:focus-visible {
   .menu-item-head h3 {
     font-size: 18px;
     line-height: 1.15;
+    overflow-wrap: anywhere;
   }
 
   .menu-item p {
