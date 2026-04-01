@@ -1,283 +1,274 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-    <title>Khaugali Chula Dosa | Ahmedabad</title>
-    <meta
-      name="description"
-      content="Khaugali Chula Dosa, South Bopal Ahmedabad. Dine-in, takeaway, and online order. Signature dosa, pavbhaji, pulav, and more."
-    />
-    <meta
-      name="keywords"
-      content="Khaugali Chula Dosa, Khau gali chula dosa, South Bopal food, Ahmedabad dosa, pavbhaji Ahmedabad, family restaurant Bopal"
-    />
-    <meta property="og:title" content="Khaugali Chula Dosa | South Bopal, Ahmedabad" />
-    <meta property="og:description" content="Crispy paper dosa, cheese specials, pavbhaji and pulav. Open daily 7:30 PM to 11:00 PM." />
-    <meta property="og:image" content="https://images.unsplash.com/photo-1668236543090-82eba5ee5976?w=1200" />
-    <meta property="og:url" content="https://khaugalichuladosa.in" />
-    <meta property="og:type" content="restaurant" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Khaugali Chula Dosa | Ahmedabad" />
-    <meta name="twitter:description" content="South Bopal's favorite dosa and street food spot." />
-    <meta name="twitter:image" content="https://images.unsplash.com/photo-1668236543090-82eba5ee5976?w=1200" />
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Restaurant",
-        "name": "Khaugali Chula Dosa",
-        "servesCuisine": ["Indian", "South Indian", "Street Food"],
-        "priceRange": "\u20b9\u20b9",
-        "telephone": "+91-7947143162",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "2FJ5+G58, South Bopal, Bopal",
-          "addressLocality": "Ahmedabad",
-          "addressRegion": "Gujarat",
-          "postalCode": "380058",
-          "addressCountry": "IN"
-        },
-        "openingHoursSpecification": [
-          {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-            "opens": "19:30",
-            "closes": "23:00"
-          }
-        ]
-      }
-    </script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:wght@400;500;700&family=Urbanist:wght@400;500;600;700;800&family=Noto+Sans+Gujarati:wght@400;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css?v=20260331g" />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Khaugali Chula Dosa | Ahmedabad</title>
+  <meta name="description" content="Khaugali Chula Dosa, South Bopal Ahmedabad. Dine-in, takeaway, and online order.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-
-  </head>
-  <body>
-    <div class="loader" id="loader" aria-hidden="true">
-      <div class="loader-flame">✦</div>
-      <p>KHAUGALI CHULA DOSA</p>
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">
+      <img src="logo.svg" alt="KCD">
+      <span class="logo-text">KHAUGALI</span>
     </div>
+    <button class="menu-btn" onclick="document.getElementById('menu').scrollIntoView({behavior:'smooth'})">Menu</button>
+  </header>
 
-    <div class="grain-overlay" aria-hidden="true"></div>
-    <a class="skip-link" href="#main-content">Skip to main content</a>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-tag">The Global Flagship Experience</div>
+    <h1>FIRE <span>&</span><br>GOLDEN CRISP</h1>
+    <p class="hero-desc">
+      Live tawa craft, bold Ahmedabad flavor, and an elevated street-food atmosphere.
+      <span class="hero-guj">સાચો સ્વાદ, સરસ માહોલ</span>
+    </p>
+    
+    <div class="hero-buttons">
+      <a href="tel:07947143162" class="btn btn-primary">Call Now</a>
+      <a href="https://wa.me/917947143162" class="btn btn-secondary">WhatsApp</a>
+      <a href="#menu" class="btn btn-outline">View Menu</a>
+    </div>
+    
+    <div class="hero-pills">
+      <span class="pill open" id="status">Open Now</span>
+      <span class="pill">3.5 rating (41+ reviews)</span>
+      <span class="pill">7:30 PM - 11:00 PM</span>
+    </div>
+  </section>
 
-    <header class="site-header" id="top">
-      <a class="brand" href="#top">
-        <img src="logo.svg" alt="Khaugali Chula Dosa logo" />
-        <span>
-          <strong>KHAUGALI</strong>
-          <small>ખાઉગલી ચુલા ઢોસા</small>
-        </span>
-      </a>
-
-      <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
-
-      <nav class="site-nav" id="site-nav">
-        <a href="#experience">Experience</a>
-        <a href="#signature">Signature</a>
-        <a href="#menu">Menu</a>
-        <a href="#legacy">Legacy</a>
-        <a href="#visit">Visit</a>
-      </nav>
-
-      <a class="header-cta" href="tel:07947143162">Call Now</a>
-    </header>
-
-    <main id="main-content">
-      <section class="hero" id="experience">
-        <div class="hero-bg" aria-hidden="true"></div>
-        <div class="hero-content">
-          <p class="hero-label">The Global Flagship Experience</p>
-          <h1>
-            FIRE <span>&</span><br />
-            GOLDEN<br />CRISP
-          </h1>
-          <p>
-            Live tawa craft, bold Ahmedabad flavor, and an elevated street-food atmosphere designed for family nights.
-            <span class="guj">સાચો સ્વાદ, સરસ માહોલ, અને ગરમા ગરમ સર્વિસ.</span>
-          </p>
-
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="tel:07947143162">Order on Call</a>
-            <a class="btn btn-secondary" target="_blank" rel="noopener" href="https://wa.me/917947143162">WhatsApp</a>
-            <a class="btn btn-ghost" href="#menu">View Menu</a>
-          </div>
-
-          <div class="hero-pills">
-            <span id="open-status"></span>
-            <span>3.5 rating (41+ reviews)</span>
-            <span>Open daily 7:30 PM to 11:00 PM</span>
-          </div>
-        </div>
-      </section>
-
-      <section class="signature" id="signature">
-        <div class="section-head">
-          <p>The Masterpieces</p>
-          <h2>Signature Creations</h2>
-        </div>
-
-        <div class="signature-grid">
-          <article class="signature-card featured">
-            <img src="https://images.unsplash.com/photo-1668236543090-82eba5ee5976?q=80&w=1000&auto=format&fit=crop" alt="Khaugali Special Dosa" loading="lazy" decoding="async" />
-            <div>
-              <h3>Khaugali Special Dosa</h3>
-              <p>Loaded giant dosa style with rich toppings, a true flagship plate for sharing.</p>
-              <strong>₹300</strong>
-            </div>
-          </article>
-          <article class="signature-card">
-            <img src="https://images.unsplash.com/photo-1606491956689-2ea8c5119c85?q=80&w=1000&auto=format&fit=crop" alt="Cheese Maggi Dosa" loading="lazy" decoding="async" />
-            <div>
-              <h3>Cheese Maggi Dosa</h3>
-              <p>Street-style fusion, layered with masala and cheese.</p>
-              <strong>₹210</strong>
-            </div>
-          </article>
-          <article class="signature-card">
-            <img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?q=80&w=1000&auto=format&fit=crop" alt="Khaugali Special Pulav" loading="lazy" decoding="async" />
-            <div>
-              <h3>Khaugali Sp. Pulav</h3>
-              <p>Balanced house masala pulav served hot from the tawa.</p>
-              <strong>₹190</strong>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section class="legacy" id="legacy">
-        <div class="legacy-copy">
-          <p class="legacy-kicker">Our Brand Manifesto</p>
-          <h2>A Legacy Built On Fire</h2>
-          <p>
-            Khaugali Chula Dosa is built on the chula tradition of live heat and bold spice. From paper dosa to loaded pavbhaji,
-            every plate carries Ahmedabad street-food energy with family-comfort seating.
-          </p>
-          <p class="guj">"સ્વાદ જે દિલ જીતી લે, પરંપરા જે ગર્વ વધારે."</p>
-        </div>
-        <div class="legacy-stats">
-          <div>
-            <b>1M+</b>
-            <span>Dosas Served</span>
-          </div>
-          <div>
-            <b>3.5</b>
-            <span>Guest Rating</span>
-          </div>
-          <div>
-            <b>Daily</b>
-            <span>7:30 PM - 11:00 PM</span>
-          </div>
-        </div>
-      </section>
-
-      <section class="menu" id="menu">
-        <div class="section-head centered">
-          <p>The Collection</p>
-          <h2>Curated Menu</h2>
-        </div>
-
-        <div class="menu-filters" role="tablist" aria-label="menu filters">
-          <button class="filter active" data-filter="all" role="tab" aria-selected="true">All</button>
-          <button class="filter" data-filter="dosa" role="tab" aria-selected="false">Dosa and Paper</button>
-          <button class="filter" data-filter="maizur" role="tab" aria-selected="false">Maisur and Gravy</button>
-          <button class="filter" data-filter="street" role="tab" aria-selected="false">Pavbhaji and Pulav</button>
-          <button class="filter" data-filter="extras" role="tab" aria-selected="false">Chinese and Others</button>
-        </div>
-
-        <div class="menu-grid" id="menu-grid" aria-live="polite"></div>
-
-        <div class="menu-note">
-          <p>Last updated: 29 March 2026</p>
-          <p>Prices may change without prior notice.</p>
-        </div>
-      </section>
-
-      <section class="reviews" id="reviews">
-        <div class="section-head centered">
-          <p>Elite Endorsements</p>
-          <h2>What Guests Say</h2>
-        </div>
-        <div class="review-grid">
-          <article>
-            <p>"Great variety of dosa and very good late-evening spot in South Bopal. Family seating is comfortable."</p>
-            <strong>Local Customer</strong>
-          </article>
-          <article>
-            <p>"Cheese and paneer dishes are really filling. Good option when you want Gujarati-style street food vibe."</p>
-            <strong>Regular Visitor</strong>
-          </article>
-          <article>
-            <p>"Service is quick and menu has lots of options including Jain dishes."</p>
-            <strong>Family Group</strong>
-          </article>
-        </div>
-      </section>
-
-      <section class="visit" id="visit">
-        <div class="section-head">
-          <p>The Destination</p>
-          <h2>Visit The Flagship</h2>
-        </div>
-        <div class="visit-grid">
-          <article>
-            <h3>Location</h3>
-            <p>2FJ5+G58, South Bopal, Bopal, Ahmedabad, Gujarat 380058</p>
-            <a target="_blank" rel="noopener" href="https://google.co.in/maps/place/Khaugali+Chula+Dosa/data=!4m2!3m1!1s0x395e9b006416f25f:0x62fa95ee2b9d9f0e?sa=X&ved=1t:242&ictx=111">Get Directions</a>
-          </article>
-          <article>
-            <h3>Hours</h3>
-            <p>Daily: 7:30 PM - 11:00 PM</p>
-          </article>
-          <article>
-            <h3>Direct Line</h3>
-            <p><a href="tel:07947143162">07947143162</a></p>
-            <div class="visit-buttons">
-              <a class="btn btn-secondary" href="tel:07947143162">Call</a>
-              <a class="btn btn-ghost" target="_blank" rel="noopener" href="https://wa.me/917947143162">WhatsApp</a>
-            </div>
-          </article>
-        </div>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <div class="footer-grid">
-        <div>
-          <p class="footer-brand">KHAUGALI CHULA DOSA</p>
-          <p>Redefining Ahmedabad street food with wood-fired tradition and bold flavor.</p>
-        </div>
-        <div>
-          <h4>Explore</h4>
-          <a href="#experience">Experience</a>
-          <a href="#signature">Signature</a>
-          <a href="#menu">Menu</a>
-          <a href="#legacy">Legacy</a>
-        </div>
-        <div>
-          <h4>Connect</h4>
-          <a href="tel:07947143162">Call: 07947143162</a>
-          <a target="_blank" rel="noopener" href="https://wa.me/917947143162">WhatsApp</a>
-          <a href="privacy.html">Privacy Policy</a>
+  <!-- Signature Dishes -->
+  <section class="section">
+    <div class="section-title">
+      <small>The Masterpieces</small>
+      <h2>Signature Creations</h2>
+    </div>
+    
+    <div class="dishes">
+      <div class="dish-card">
+        <img src="https://images.unsplash.com/photo-1668236543090-82eba5ee5976?w=600" alt="Special Dosa">
+        <div class="dish-info">
+          <h3>Khaugali Special Dosa</h3>
+          <p>Loaded giant dosa with rich toppings</p>
+          <div class="dish-price">₹300</div>
         </div>
       </div>
-      <p class="copyright">© <span id="year"></span> Khaugali Chula Dosa. All rights reserved.</p>
-    </footer>
-
-    <div class="mobile-fab" aria-label="Quick mobile actions">
-      <a class="mobile-whatsapp" href="https://wa.me/917947143162" target="_blank" rel="noopener" aria-label="WhatsApp Khaugali Chula Dosa">WA</a>
-      <a class="mobile-call" href="tel:07947143162" aria-label="Call Khaugali Chula Dosa">Call</a>
+      
+      <div class="dish-card">
+        <img src="https://images.unsplash.com/photo-1606491956689-2ea8c5119c85?w=600" alt="Cheese Maggi Dosa">
+        <div class="dish-info">
+          <h3>Cheese Maggi Dosa</h3>
+          <p>Street-style fusion with masala and cheese</p>
+          <div class="dish-price">₹210</div>
+        </div>
+      </div>
+      
+      <div class="dish-card">
+        <img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=600" alt="Special Pulav">
+        <div class="dish-info">
+          <h3>Khaugali Sp. Pulav</h3>
+          <p>House masala pulav served hot</p>
+          <div class="dish-price">₹190</div>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <noscript>
-      <div class="noscript-msg">For full menu filters and live open status, please enable JavaScript.</div>
-    </noscript>
+  <!-- Menu -->
+  <section class="section" id="menu">
+    <div class="section-title">
+      <small>The Collection</small>
+      <h2>Our Menu</h2>
+    </div>
+    
+    <div class="menu-tabs">
+      <button class="menu-tab active" onclick="showMenu('all', this)">All</button>
+      <button class="menu-tab" onclick="showMenu('dosa', this)">Dosa</button>
+      <button class="menu-tab" onclick="showMenu('maizur', this)">Maisur</button>
+      <button class="menu-tab" onclick="showMenu('street', this)">Pavbhaji</button>
+      <button class="menu-tab" onclick="showMenu('extras', this)">Chinese</button>
+    </div>
+    
+    <div class="menu-list" id="menu-list">
+      <!-- Menu items populated by JS -->
+    </div>
+  </section>
 
-    <script src="script.js?v=20260331g"></script>
-  </body>
+  <!-- Reviews -->
+  <section class="section">
+    <div class="section-title">
+      <small>Guest Reviews</small>
+      <h2>What People Say</h2>
+    </div>
+    
+    <div class="reviews-scroll">
+      <div class="review-card">
+        <p>"Great variety of dosa and very good late-evening spot in South Bopal. Family seating is comfortable."</p>
+        <strong>Local Customer</strong>
+      </div>
+      <div class="review-card">
+        <p>"Cheese and paneer dishes are really filling. Good option when you want Gujarati-style street food vibe."</p>
+        <strong>Regular Visitor</strong>
+      </div>
+      <div class="review-card">
+        <p>"Service is quick and menu has lots of options including Jain dishes."</p>
+        <strong>Family Group</strong>
+      </div>
+    </div>
+  </section>
+
+  <!-- Visit Info -->
+  <section class="section">
+    <div class="section-title">
+      <small>Visit Us</small>
+      <h2>Location & Hours</h2>
+    </div>
+    
+    <div class="info-grid">
+      <div class="info-card">
+        <h3>Address</h3>
+        <p>2FJ5+G58, South Bopal, Bopal, Ahmedabad, Gujarat 380058</p>
+        <a href="https://google.co.in/maps/place/Khaugali+Chula+Dosa" target="_blank">Get Directions →</a>
+      </div>
+      
+      <div class="info-card">
+        <h3>Hours</h3>
+        <p>Daily: 7:30 PM - 11:00 PM</p>
+        <span id="hours-status" style="color: #4ade80;">Open Now</span>
+      </div>
+      
+      <div class="info-card">
+        <h3>Contact</h3>
+        <p>07947143162</p>
+        <div class="info-buttons">
+          <a href="tel:07947143162" class="btn btn-primary">Call</a>
+          <a href="https://wa.me/917947143162" class="btn btn-secondary">WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <h3>KHAUGALI CHULA DOSA</h3>
+    <p>Redefining Ahmedabad street food with bold flavor.</p>
+    <div class="footer-links">
+      <a href="#menu">Menu</a>
+      <a href="privacy.html">Privacy</a>
+    </div>
+    <p class="copyright">© 2026 Khaugali Chula Dosa. All rights reserved.</p>
+  </footer>
+
+  <!-- Floating Buttons -->
+  <div class="fab">
+    <a href="https://wa.me/917947143162" class="fab-btn fab-whatsapp">WA</a>
+    <a href="tel:07947143162" class="fab-btn fab-call">Call</a>
+  </div>
+
+  <script>
+    // Menu Data
+    const menuData = {
+      dosa: [
+        {name: "Plain Paper Oil", price: "₹50"},
+        {name: "Fudina Paper", price: "₹70"},
+        {name: "Garlic Paper", price: "₹90"},
+        {name: "Cheese Onion Paper", price: "₹100"},
+        {name: "Masala Dosa Butter", price: "₹130"},
+        {name: "Cheese Paneer Masala", price: "₹170"},
+        {name: "Pizza Dosa", price: "₹210"},
+        {name: "Cheese Maggi Dosa", price: "₹210"}
+      ],
+      maizur: [
+        {name: "Surti Maisur Oil", price: "₹130"},
+        {name: "Maisur Butter", price: "₹150"},
+        {name: "Cheese Maisur", price: "₹170"},
+        {name: "Cheese Paneer Maisur", price: "₹180"},
+        {name: "Khaugali Sp. Maisur", price: "₹270"}
+      ],
+      street: [
+        {name: "Pavbhaji", price: "₹120"},
+        {name: "Butter Pavbhaji", price: "₹130"},
+        {name: "Cheese Pavbhaji", price: "₹180"},
+        {name: "Tawa Pulav", price: "₹120"},
+        {name: "Cheese Pulav", price: "₹160"},
+        {name: "Khaugali Sp. Pulav", price: "₹190"}
+      ],
+      extras: [
+        {name: "Manchurian Dry/Gravy", price: "₹90/₹120"},
+        {name: "Noodles", price: "₹90/₹120"},
+        {name: "Paneer Chilli", price: "₹230"},
+        {name: "Chinese Bhel", price: "₹150"}
+      ]
+    };
+
+    // Show Menu
+    function showMenu(category, btn) {
+      // Update active tab
+      document.querySelectorAll('.menu-tab').forEach(t => t.classList.remove('active'));
+      btn.classList.add('active');
+      
+      // Get items
+      let items = [];
+      if (category === 'all') {
+        Object.values(menuData).forEach(arr => items.push(...arr));
+      } else {
+        items = menuData[category] || [];
+      }
+      
+      // Render
+      const list = document.getElementById('menu-list');
+      list.innerHTML = items.map(item => `
+        <div class="menu-item">
+          <div class="menu-item-info">
+            <h4>${item.name}</h4>
+          </div>
+          <span class="menu-item-price">${item.price}</span>
+        </div>
+      `).join('');
+    }
+
+    // Open Status
+    function updateStatus() {
+      const now = new Date();
+      const utc = now.getTime() + now.getTimezoneOffset() * 60000;
+      const ist = new Date(utc + 5.5 * 3600000);
+      const hours = ist.getHours();
+      const mins = ist.getMinutes();
+      const totalMins = hours * 60 + mins;
+      
+      const openMins = 19 * 60 + 30; // 7:30 PM
+      const closeMins = 23 * 60;     // 11:00 PM
+      
+      const statusEl = document.getElementById('status');
+      const hoursEl = document.getElementById('hours-status');
+      
+      if (totalMins >= openMins && totalMins < closeMins) {
+        const left = closeMins - totalMins;
+        const h = Math.floor(left / 60);
+        const m = left % 60;
+        const text = h > 0 ? `${h}h ${m}m left` : `${m}m left`;
+        if (statusEl) statusEl.textContent = `Open · ${text}`;
+        if (hoursEl) hoursEl.textContent = `Open · ${text}`;
+      } else {
+        if (statusEl) {
+          statusEl.textContent = 'Closed · Opens 7:30 PM';
+          statusEl.classList.remove('open');
+        }
+        if (hoursEl) {
+          hoursEl.textContent = 'Closed · Opens 7:30 PM';
+          hoursEl.style.color = '#ff6b6b';
+        }
+      }
+    }
+
+    // Init
+    showMenu('all', document.querySelector('.menu-tab'));
+    updateStatus();
+    setInterval(updateStatus, 60000);
+  </script>
+
+</body>
 </html>
