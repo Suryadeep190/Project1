@@ -149,17 +149,17 @@ a {
 
 .btn-primary {
   background: #ff4d00;
-  color: #fff;
+  color: #ffffff !important;
 }
 
 .btn-secondary {
   background: #25d366;
-  color: #fff;
+  color: #ffffff !important;
 }
 
 .btn-outline {
   background: transparent;
-  color: #fff;
+  color: #ffffff;
   border: 1px solid rgba(255,255,255,0.3);
 }
 
@@ -362,8 +362,12 @@ a {
 
 .info-buttons .btn {
   flex: 1;
-  font-size: 12px;
-  padding: 10px;
+  font-size: 13px;
+  padding: 12px;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 /* ============================================
