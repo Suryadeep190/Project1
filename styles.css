@@ -136,6 +136,9 @@ a {
 }
 
 .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   padding: 12px 24px;
   border-radius: 25px;
   font-size: 13px;
@@ -145,6 +148,7 @@ a {
   border: none;
   cursor: pointer;
   min-height: 44px;
+  text-decoration: none;
 }
 
 .btn-primary {
@@ -475,7 +479,7 @@ a {
 }
 
 .fab-call {
-  background: #ff4d00;
+  background: #18fe03;
 }
 
 .fab-whatsapp {
