@@ -25,7 +25,6 @@ View your app in AI Studio: https://ai.studio/apps/eec34990-a79f-4ff6-a061-c1835
 ```
 
 - `docs/` is now the canonical documentation folder.
-- `USER MANUAL.pdf` is temporarily still in root due to an active file lock on Windows.
 
 ## Run Locally
 
